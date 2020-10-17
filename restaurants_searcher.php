@@ -19,13 +19,13 @@ function write_data_to_csv($params){
     try{
         $json_res = $client->request('GET', "https://api.gnavi.co.jp/RestSearchAPI/v3/", ['query' => $params])->getBody();
     }catch(Exception $e){
-        return print("エラーが発生しました!");
+        return print("22エラーが発生しました!");
     }
     
     $response = json_decode($json_res,true);
     
     if(isset($response["error"])){
-        return(print("エラーが発生しました!"));
+        return(print("28エラーが発生しました!"));
     }
     
     
