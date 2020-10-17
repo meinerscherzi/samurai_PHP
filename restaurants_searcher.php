@@ -28,7 +28,6 @@ function write_data_to_csv($params){
         return(print("エラーが発生しました!"));
     }
     
-    print_r($response);
     
         foreach($response["rest"] as &$restaurant){
            
